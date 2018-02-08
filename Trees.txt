@@ -1,0 +1,18 @@
+In this project, there is a two dimentional tree, and each of its nodes have 4 children: TopLeft, BottomLeft, TopRight, BottomRight. The tree nodes holds rectangles. 
+
+* If you go towards right and bottom, the x and y coordinates (respectively) increase.
+* If a rectangle intersects with any of the center axis of a node (horizontal and vertical) it can be held by that node. (right and bottom of the rectangle is not included).
+
+Input: 1) rectdb.txt
+       Format: Top - Left - Bottom - Right
+	       First line is the extent rectangle for the top main tree.
+	       The other lines are rectangles. It understands that there are not rectangles when a line starts with -1.
+       2) standard input
+       Read query points (x,y) untill -1 is entered.
+
+Output: First query point
+	# of rectangles it intersects.
+        Coordinates of these rectangles (top-left-bottom-right)
+	Repeat for all query points.
+
+Note: Be careful with inputs since there are no input checks implemented. 

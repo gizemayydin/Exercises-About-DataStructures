@@ -1,0 +1,7 @@
+This program implements the Ziv-Lempel compression algorithm. Hash tables (open addressing with linear probing) are used. There is one compressor and one decompressor. 
+
+Files are used for I/O.
+Input for compressor: "compin"
+Output of compressor: "compout"
+Input of decompressor: "compout"
+Output of decompressor: "decompout"

@@ -1,0 +1,9 @@
+This program implements a solution to the Skyline Problem. The buildings are considered to have 2 dimensions.
+
+Input: Standard Input
+       First number of buildings, and then x coordinate of the left side of the building, height of the building, x coordinate of the right side of the building respectively for each building should be entered.
+
+Output: Coordinates describing the skyline
+
+To solve the problem a MPQ(Modified Priority Queue) class is used. They are very similar to regular heaps, however here objects stored have two components, a value and a label. Using "value" items in the heap can be compared, and label is an identifier which identifies a specific item in the MPQ. To access elements in the heap quickly, we will use a "Location" array such that;its i^th entry contains the position in the heap of the item having label i. At all times, for the valid entries in the heap, Heap[Location[i]].label equals i, and Location[Heap[j].label] equals j.
+ 
